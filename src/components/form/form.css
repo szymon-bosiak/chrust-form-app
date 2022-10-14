@@ -1,0 +1,123 @@
+/* FORM */
+
+#overlay {
+    position: absolute;
+    background-color: black;
+}
+
+.form_area {
+    position: absolute;
+    display: block;
+    height: 57rem;
+    width: 20rem;
+    right: 18%;
+    top: 6%;
+    background: wheat;
+    border: 1px solid rgba(129, 129, 129, 0.445);
+    padding: 0 2rem;
+    z-index: 10;
+}
+
+.form_area h1 {
+    font-size: 18px;
+    padding: 1.2rem 0;
+}
+
+.floating_form {
+    padding: 2rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.floating_form p {
+    color: red;
+    font-size: 13px;
+    margin: .5rem 0 .7rem 0.2rem;
+}
+
+.floating_form input,
+select,
+button {
+    background: rgba(255, 255, 255, 0.877);
+    border: 1px solid rgba(0, 0, 0, 0.404);
+    border-radius: .3rem;
+    height: 2rem;
+    padding-left: .7rem;
+}
+
+.floating_form button {
+    padding-left: 0;
+}
+
+.make_space_even {
+    height: 100%;
+}
+
+.floating_form select,
+button {
+    width: 15rem;
+    cursor: pointer;
+}
+
+.txt_inputs input {
+    width: 15rem;
+}
+
+.floating_form .name_input input {
+    border-radius: 0;
+}
+
+.select_temperature {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.container input {
+    position: relative;
+    top: -.3rem;
+    margin-right: .6rem;
+}
+
+/* ========== MEDIA QUERIES (VERY BIG) ========== */
+
+@media screen and (min-width: 1950px) {
+    .form_area {
+        top: 9rem;
+    }
+}
+
+/* ========== MEDIA QUERIES (MEDIUM) ========== */
+
+@media screen and (max-width: 950px) {
+    .form_area {
+        right: 14%;
+        top: 6%;
+    }
+}
+
+/* ========== MEDIA QUERIES (SMALL) ========== */
+
+@media screen and (max-width: 600px) {
+    #form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form_area {
+        right: auto;
+        top: 9%;
+    }
+
+    .submit {
+        margin-bottom: 1rem;
+    }
+}

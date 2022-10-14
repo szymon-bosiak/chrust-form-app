@@ -1,0 +1,79 @@
+/* AGENDA */
+
+.agenda {
+    position: relative;
+    top: -11rem;
+    padding: 5rem 4rem 0 4rem;
+    margin: 5rem 0 5rem 5rem;
+    background: white;
+}
+
+.header_agenda {
+    padding-bottom: 2rem;
+}
+
+.elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 60rem;
+    padding-top: 2rem;
+}
+
+.element {
+    max-width: 13rem;
+}
+
+.element_icon {
+    font-size: 80px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.element h3 {
+    margin-bottom: .4rem;
+}
+
+.element p {
+    font-size: 13px;
+}
+
+/* ========== MEDIA QUERIES (BIG) ========== */
+
+@media screen and (max-width: 1150px) {
+    .agenda {
+        top: 0rem;
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .agenda {
+        text-align: center;
+        margin: 8rem 0;
+    }
+
+    .elements {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .element {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ========== MEDIA QUERIES (MEDIUM) ========== */
+
+@media screen and (max-width: 950px) {}
+
+/* ========== MEDIA QUERIES (SMALL) ========== */
+
+@media screen and (max-width: 600px) {
+    .agenda {
+        margin-top: 3rem;
+    }
+}

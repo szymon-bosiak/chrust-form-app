@@ -1,0 +1,1 @@
+Prosty landing page z funkcjonalnym formularzem przyjmującym wymagane dane (pole przyjmują dane po spełnieniu wymogów).

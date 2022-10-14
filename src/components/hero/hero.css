@@ -1,0 +1,76 @@
+/* HEADER */
+
+.header_main {
+    margin: 0 3rem;
+    background-color: white;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: .2rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    top: -.7rem;
+    font-size: 2rem;
+}
+
+.logo_icon {
+    margin-bottom: .3rem;
+    color: white;
+}
+
+.header_content {
+    padding-bottom: 1.4rem;
+}
+
+
+/* BACKGROUND */
+
+.background {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+}
+
+.background img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+}
+
+.first_img {
+    object-position: 36% 90%;
+}
+
+.second_img {
+    object-position: 65% 0%;
+}
+
+/* ========== MEDIA QUERIES (MEDIUM) ========== */
+
+@media screen and (max-width: 950px) {
+    .header_main {
+        padding-bottom: 2rem;
+    }
+}
+
+/* ========== MEDIA QUERIES (SMALL) ========== */
+
+@media screen and (max-width: 600px) {
+    .background {
+        display: flex;
+    }
+
+    .background img {
+        height: 105vh;
+    }
+
+    .second_img {
+        display: none;
+    }
+}

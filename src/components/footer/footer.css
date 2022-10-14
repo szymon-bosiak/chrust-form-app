@@ -1,0 +1,26 @@
+/* FOOTER */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    height: 8rem;
+    width: 100%;
+    background: white;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 3rem;
+    font-size: 12px;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right a {
+    text-decoration: none;
+    color: rgb(165, 97, 42);
+}
